@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Videos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <h2>A fun page of videos</h2>
+    </nav>
+    <main>
+        <h1>Funny Videos</h1>
+        <p>Both subtitles and captions are provided with the TRACK element.</p>
+        <div>
+            <h2>Captions</h2>
+            <p>Captions are generally given in the same language as the original content. It includes relevant sound effects or background noises because the intended audience is those who cannot hear the audio for some reasons.</p>
+            <!-- TODO: Put the dog video here. Set the width to 400 pixels and include controls -->
+            
+            </video>
+            <video width="400px" conrols>
+                <source src="assets/videos/dog-video.mp4">
+                <track src="assets/text-tracks/dog-video.vtt"
+                kind="captions"
+                srclang="English"
+                label="Enlish Captions">
+
+            </video>
+            
+    <!-- Include a track tag with the src attribute set to "dog-video.vtt" -->
+
+        </div>
+        <div>
+            <h2>Subtitles</h2>
+            <p>Subtitles are typically provided in a language other than the original content and are intended for people who are not speakers of the language that the original content is being served in.</p>
+            <h3>Translations for pigeons</h3>
+            <p>
+                Obviously, none of us can understand what pigeons are saying, so we'll just make up some subtitles! Create your own time stamps and invent your own dialog!
+            </p>
+            <!-- TODO: Put the pigeons in love MP4 video here-->
+            <video width="400" controls>
+                <source 
+                src="assets/videos/pigeons-in-love.mp4" 
+                type="video/mp4">
+                <track 
+                src="assets/text-tracks/pigeons-in-love-english.vtt" 
+                kind="subtitles" 
+                srclang="en" 
+                label="English Subtitles">
+                <track src="assets/text-tracks/pigeons-in-love-french.vtt" 
+                kind="subtitles" 
+                srclang="fr" 
+                label="French Subtitles">
+            </video>
+            <video width="400px" controls>
+                
+                <source src="assets/videos/pigeons-in-love.mp4"
+                type="videos/mp4">
+                <track 
+                src="assets/text-tracks/pigeons-in-love-english.vtt"
+                kind="subtitles"
+                srclang="English"
+                label="English subtitles">
+                <track 
+                src="assets/text-tracks/pigeons-in-love-english.vtt"
+                kind="subtitles"
+                srclang="French"
+                label="French subtitles">
+            </video>
+
+            <!-- This video should have controls and two track tags (for example, for English AND French subtitles) -->
+        </div>
+    </main>
+</body>
+</html>
